@@ -32,11 +32,12 @@ _player addaction [
 	true,
 	"",
 	format ["
-		count ([
+		(count ([
 			['going_to_work', 'working'],
 			_this,
 			%1
-		] call topHat_fnc_getAllAppropriateEngineers) > 0
+		] call topHat_fnc_getAllAppropriateEngineers) > 0) and 
+		(_this == _target)
 	", _distance]
 ];
 
@@ -58,11 +59,12 @@ _player addaction [
 	true,
 	"",
 	format ["
-		count ([
+		(count ([
 			['joined_player'],
 			_this,
 			%1
-		] call topHat_fnc_getAllAppropriateEngineers) > 0
+		] call topHat_fnc_getAllAppropriateEngineers) > 0) and 
+		(_this == _target)
 	", _distance]
 ];
 
@@ -84,10 +86,11 @@ _player addaction [
 	true,
 	"",
 	format ["
-		count ([
+		(count ([
 			['taking_cover', 'in_cover'],
 			_this,
 			%1
-		] call topHat_fnc_getAllAppropriateEngineers) > 0
+		] call topHat_fnc_getAllAppropriateEngineers) > 0) and 
+		(_this == _target)
 	", _distance]
 ];
