@@ -44,19 +44,19 @@ _unit addAction [
 		[[1, 2], [0]] call ace_spectator_fnc_updateCameraModes;
 		[[-2, -1, 0, 1, 2, 3, 4, 5, 6, 7], []] call ace_spectator_fnc_updateVisionModes;
 		[false] call acre_api_fnc_setSpectator;
-(getpos player) spawn {
-	while {!(isNil "ace_spectator_isSet") and {ace_spectator_isSet}} do {
-		sleep 0.25;
-		if (!(isNil "ace_spectator_camFocus") and {ace_spectator_camFocus != attachedTo player}) then {
-			detach player;
-			player attachTo [ace_spectator_camFocus, [0,0,2]];
+		(getpos player) spawn {
+			while {!(isNil "ace_spectator_isSet") and {ace_spectator_isSet}} do {
+				sleep 0.25;
+				if (!(isNil "ace_spectator_camFocus") and {ace_spectator_camFocus != attachedTo player}) then {
+					detach player;
+					player attachTo [ace_spectator_camFocus, [0,0,2]];
+				};
+			};
+			if !(isNull (attachedTo player)) then { 
+				detach player;
+				player setPos _this;
+			};
 		};
-	};
-	if !(isNull (attachedTo player)) then { 
-		detach player;
-		player setPos _this;
-	};
-};
 	}
 ];
 // _this select 0 : The target player object
