@@ -180,7 +180,7 @@ force ace_rearm_level = 2;
 force ace_rearm_supply = 0;
 
 // ACE Respawn
-force ace_respawn_removeDeadBodiesDisconnected = true;
+force ace_respawn_removeDeadBodiesDisconnected = false;
 force ace_respawn_savePreDeathGear = false;
 
 // ACE Uncategorized
