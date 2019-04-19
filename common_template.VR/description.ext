@@ -18,6 +18,10 @@ showCompass = 1;
 showMap = 1;
 showWatch = 1;
 
+// Corpse management: https://community.bistudio.com/wiki/Description.ext#corpseManagerMode
+corpseManagerMode = 3;
+corpseLimit = 20;
+
 // CBA Settings
 cba_settings_hasSettingsFile = 1;
 
