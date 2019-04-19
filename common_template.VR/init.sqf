@@ -6,6 +6,7 @@ nul = [] spawn {
 
 [] execVM "recce\disable_jip_respawn.sqf";
 [] execVM "recce\log_difficulty.sqf";
+[] execVM "recce\log_killed.sqf";
 
 // Date and time Parameters
 /*
