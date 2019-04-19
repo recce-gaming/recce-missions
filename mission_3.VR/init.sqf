@@ -15,3 +15,5 @@ nul = [] spawn {
     "hour" call BIS_fnc_getParamValue,
     "minute" call BIS_fnc_getParamValue
 ]  call zamf_fnc_setDateTime;
+
+nul = [7.7,15.4] execVM "set_random_wind.sqf";
