@@ -102,7 +102,7 @@ class CustomAttributes
 							"BOOL"
 						};
 					};
-					value=1;
+					value=0;
 				};
 			};
 		};
