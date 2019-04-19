@@ -9,11 +9,9 @@ nul = [] spawn {
 [] execVM "recce\log_killed.sqf";
 
 // Date and time Parameters
-/*
 [
-    "month" call BIS_fnc_getParamValue,
-    "day" call BIS_fnc_getParamValue,
+    -1,
+    -1,
     "hour" call BIS_fnc_getParamValue,
     "minute" call BIS_fnc_getParamValue
 ]  call zamf_fnc_setDateTime;
-*/

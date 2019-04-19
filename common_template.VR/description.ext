@@ -1,6 +1,6 @@
 author="Recce Gaming -ZAJohan";
-onLoadName = "Top Hat -Training Grounds";
-OnLoadMission = "Training Grounds for Operation Top Hat";
+onLoadName = "";
+OnLoadMission = "";
 overviewPicture = "Overview.jpg";
 
 
@@ -64,6 +64,7 @@ class CfgRemoteExec
     };
 };
 
+/*
 // Mission parameters
 class Params {
 
@@ -77,3 +78,4 @@ class Params {
 	#include "zamf\world\world_params.hpp"
 
 };
+*/
