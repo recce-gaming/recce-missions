@@ -3,6 +3,9 @@ onLoadName = "";
 OnLoadMission = "";
 overviewPicture = "Overview.jpg";
 
+// For default values of params
+#define zamf_world_params_hour 12
+#define zamf_world_params_minute 0
 
 respawn = 3;  // Allow JIP
 respawnDelay = 3;
@@ -30,6 +33,7 @@ class CfgFunctions
 {
     #include "vcom\cfgFunctions.hpp"  // VCOM
     #include "zamf\zamf_cfgfunctions.hpp"
+    #include "teamSleep\cfgfunctions.hpp"  // Team sleep
 };
 
 // VCOM
@@ -56,6 +60,7 @@ class CfgRemoteExec
 		class SpawnScript { allowedTargets = 0;jip = 1; };
 		class enableSimulationGlobal { allowedTargets = 0;jip = 1; };
 		class VCM_fnc_KnowAbout { allowedTargets = 0;jip = 1; };
+        #include "teamSleep\cfgremoteexec_functions.hpp"  // Team sleep
     };
 
     class Commands
