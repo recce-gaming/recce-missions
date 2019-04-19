@@ -1,3 +1,16 @@
+/*
+	Author: Phoenix of Zulu-Alpha
+
+	Description:
+		Spawns an enemy AI, sets their skill to 20% (reference level) and logs what all
+        their actual skill levels are for each aspect of their skill.
+
+	Params:
+		0 : OBJECT - The player to give options to.
+
+	Returns:
+		Nothing
+*/
 if !(isServer) exitWith {};
 waitUntil {time > 5};
 
@@ -36,7 +49,7 @@ _settings = [];
 } forEach _options;
 
 _test_enemy = (createGroup east) createUnit ["O_Soldier_F", [0, 0, 0], [], 0, "NONE"];
-_test_enemy setSkill 0.24757722;
+_test_enemy setSkill 0.2;
 
 _skillNames = [
     "aimingAccuracy",
