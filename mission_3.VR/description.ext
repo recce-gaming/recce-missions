@@ -78,7 +78,14 @@ class Params {
         texts[]= {" "};
         default = 0;
 	};
-
 	#include "zamf\world\world_params.hpp"
+
+    class aar_header {
+        title = ":: AAR";
+        values[]= {0};
+        texts[]= {" "};
+        default = 0;
+	};
+    #include "dzn_brv\params.hpp"
 
 };
