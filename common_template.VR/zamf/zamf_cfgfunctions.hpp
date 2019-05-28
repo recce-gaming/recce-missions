@@ -22,12 +22,12 @@ class ZAMF
 	class world
 	{
 		file = "zamf\world\fnc";
-		class setDateTime {description = "Sets date and time. Designed for use with params."};
+		class setDateTime {description = "Sets date and time. Designed for use with params.";};
 	};
 
 	class spectate
 	{
 		file = "zamf\spectate\fnc";
-		class spectateOptions {description = "Gives the target player local only action menu options to spectate and keeps them hidden."};
+		class spectateOptions {description = "Gives the target player local only action menu options to spectate and keeps them hidden.";};
 	};
 };

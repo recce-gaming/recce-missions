@@ -67,14 +67,7 @@ class CfgRemoteExec
 
 // Mission parameters
 class Params {
-
-	// class world_header {
-    //     title = ":: World";
-    //     values[]= {0};
-    //     texts[]= {" "};
-    //     default = 0;
-	// };
-	// #include "zamf\world\world_params.hpp"
+	//#include "zamf\world\world_params.hpp"
 
     class aar_header {
         title = ":: AAR";
