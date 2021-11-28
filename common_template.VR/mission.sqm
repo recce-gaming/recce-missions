@@ -1,4 +1,4 @@
-version=53;
+version=54;
 class EditorData
 {
 	moveGridStep=1;
@@ -12,13 +12,14 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3241.2007,11.983551,7074.3604};
-		dir[]={-0.7427476,-0.5768401,-0.3402347};
-		up[]={-0.52445757,0.81683224,-0.24023917};
-		aside[]={-0.41649702,-9.5122232e-008,0.90922922};
+		pos[]={3229.4927,11.983551,7054.6299};
+		dir[]={-0.02051405,-0.47038949,0.88224697};
+		up[]={-0.010935206,0.88246202,0.47026914};
+		aside[]={0.99974644,-3.8300641e-008,0.023248203};
 	};
 };
 binarizationWanted=0;
+sourceName="common_template";
 addons[]=
 {
 	"A3_Characters_F",
@@ -145,13 +146,13 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3229.5588,5.0014391,7067.3545};
+						position[]={3229.5591,5.0014391,7067.355};
 					};
 					side="Civilian";
 					flags=7;
 					class Attributes
 					{
-						init="call{[this] call zamf_fnc_spectateOptions}";
+						init="nul = [this] spawn zamf_fnc_spectateOptions; ";
 						name="Reporter";
 						description="AL J Venter@PBS";
 						isPlayer=1;
@@ -203,7 +204,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_advanced_fatigue_performanceFactor";
-							expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"",_value,true]";
+							expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
 							class Value
 							{
 								class data

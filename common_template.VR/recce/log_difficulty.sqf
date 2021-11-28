@@ -6,7 +6,7 @@
         their actual skill levels are for each aspect of their skill.
 
 	Params:
-		0 : OBJECT - The player to give options to.
+		Nothing
 
 	Returns:
 		Nothing

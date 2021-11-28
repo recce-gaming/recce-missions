@@ -2,7 +2,7 @@
 	Author: Phoenix of Zulu-Alpha
 
 	Description:
-		Logs to the server log when a man dies, their side, their siede's total deaths and
+		Logs to the server log when a man dies, their side, their side's total deaths and
 		counts the total of 'special' men killed, as defined by 
 		`this setVariable ["is_special", true];` in the unit's init.
 
